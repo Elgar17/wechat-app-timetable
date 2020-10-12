@@ -1,0 +1,133 @@
+/* pages/edit/edit.wxss */
+#body {
+  min-height: 1000rpx;
+  background-color: #eee;
+}
+
+#continer {
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+  background: url(https://s1.ax1x.com/2020/10/06/0UN1C4.jpg);
+  background-size: cover;
+}
+
+#continer .daiban {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  line-height: 120rpx;
+  margin-top: 200rpx;
+  font-size: 40rpx;
+  background-color: #fff;
+  color: #000;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.weather-content {
+  width: 100%;
+  padding-left: 50rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #9e9e9e;
+  background-color: #fff;
+}
+.weather-content .week-data{
+  padding: 0 20rpx;
+}
+.weather-content .data-time{
+  padding-right: 100rpx;
+}
+.weather-content .weather{
+  font-size: 10px;
+  padding-right: 20rpx;
+}
+/* 输入 */
+.insert-box{
+  display: flex;
+  align-items: center;
+  padding: 0  0 0 30rpx;
+  margin: 20rpx 30rpx;
+  background-color: #fff;
+}
+.insert-box input{
+  flex: 8;
+}
+.insert-box button{
+  flex: 1;
+  background-color: #0094ff;
+  color: #fff;
+}
+
+/************************************
+              todo模块 
+ ***********************************/
+/* #todo-list{
+  overflow: hidden;
+}
+#todo-list .daiban-list{
+  display: flex;
+  width: 690rpx;
+  height: 170rpx;
+  overflow: hidden;
+  margin: 20rpx 0 20rpx 35rpx;
+  background-color: #fff;
+  border-radius: 15rpx 0 0 15rpx;
+}
+
+#todo-list .color{
+  width: 20rpx;
+  height: 100%;
+  background-color: orange;
+}
+
+#todo-list .time-box{
+  width: 180rpx;
+  height: 100%;
+  border-right: 2rpx solid #eee;
+}
+
+#todo-list .colock-box{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#todo-list .time-box .todo-data{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100%;
+  color: orange;
+} */
+
+.daiban-list{
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  margin: 20rpx 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 0 30rpx;
+}
+.daiban-list .todo-text{
+  flex: 7;
+}
+
+.daiban-list .todo-ok{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.daiban-list .todo-dlate{
+  flex: 1;
+  margin: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

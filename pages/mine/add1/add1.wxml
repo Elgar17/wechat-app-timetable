@@ -1,0 +1,9 @@
+<view class="body"  style="min-height:{{winHeight}}px">
+    <view class="head">📚添加课程</view>
+    <view class="title">请输入课程名：</view>
+    <input  model:value="{{courseName}}" maxlength="6" class="course" placeholder="课程名(小于6字)" type="text"/>
+    <view class="title">请输入上课地点：</view>
+    <input model:value="{{courseAd}}" maxlength="6" class="course" placeholder="课程地点(小于6字)" type="text"/>
+    <button  bindtap="addCourse">添加</button>
+</view>
+

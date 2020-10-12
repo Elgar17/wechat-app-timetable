@@ -1,0 +1,153 @@
+/* pages/mine/mine.wxss */
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+    width: 50%;
+    color: #777777;
+}
+.on{ color: #0094ff;
+    border-bottom: 3rpx solid #0094ff;}
+
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+    text-align: center;
+}
+
+/*  */
+
+#week-headeer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rpx 0;
+    color: #0094ff;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#week-headeer text{
+    width: 100%;
+
+}
+#week-headeer text:nth-child(1){
+    margin-left: 20rpx;
+}
+
+
+#week-continer{
+    display: flex;
+}
+
+#week-continer .week-left-box{
+    width: 20rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  #0094ff;
+    justify-content: space-between;
+}
+
+#week-continer .week-left-box view{
+    height: 90rpx;
+    width: 100%;
+    color: #fff;
+    font-size: 20rpx;   
+    text-align: center;
+}
+
+.week-content{
+    width: 100%;
+}
+
+.week-content .row-box{
+    display: flex;
+    height: 180rpx;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1rpx solid #fff;
+}
+.week-content .col-box{
+    flex: 1;
+    height: 100%;
+    /* background-color: #81c1ff; */
+    border-radius: 10rpx;
+    border: 1px solid #fff;
+}
+.week-content .col-box .course{
+    height: 50%;
+    font-size: 30rpx;
+    text-align: center;
+    padding-top: 5rpx;
+    color: #fff;
+    font-weight: bold;
+}
+
+.week-content .col-box .address{
+    font-size: 28rpx;
+    color: #fff;
+}
+
+/* 背景颜色模块 */
+.blue{
+    background-color: #81c1ff;
+}
+.orange{
+    background-color: #fe9494;
+}
+.deepBlue{
+    background-color: #78a0ff;
+}
+.purple{
+    background-color: #ba9cfe;
+}
+.grey{
+    background-color: #e5e5e5;
+}
+.lightBlue{
+    background-color: #8ce0c9;
+}
+
+
+/* 当天的课程 */
+
+.today-list{
+    display: flex;
+    width: 650rpx;
+    height: 160rpx;
+    margin:  20rpx 50rpx;
+    color: #fff;
+    background: linear-gradient(to right, #ff9740, #feb644);
+    border-radius: 20rpx;
+}
+
+.today-list view{
+    width: 325rpx;
+    height: 160rpx;
+    font-size: 45rpx;
+    line-height: 160rpx;
+}
+.today-list view:nth-child(1){
+    font-size: 55rpx;
+    font-weight: bold;
+}
+
+.today-list:nth-child(1){
+    background: linear-gradient(to right, #ff9740, #feb644);
+}
+.today-list:nth-child(2){
+    background: linear-gradient(to right,#3ba8fa, #41d3fe);
+}
+.today-list:nth-child( 3){
+    background: linear-gradient(to right,#36d1ca, #46dfb6);
+}
+.today-list:nth-child(4){
+    background: linear-gradient(to right,#f02ecb, #f562d5);
+}
+.today-list:nth-child(5){
+    background: linear-gradient(to right,#00db30, #31e42f);
+}
+.today-list:nth-child(6){
+    background: linear-gradient(to right,#3e2566,#58347f);
+}

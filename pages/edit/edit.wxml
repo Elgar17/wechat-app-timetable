@@ -1,0 +1,35 @@
+<!--pages/edit/edit.wxml-->
+<view id="body" style="height:{{winHeight}}px">
+  <view id="continer">
+    <view class="daiban">{{total}}</view>
+  </view>
+  <!-- 天气模块 -->
+  <view class="weather-content">
+    <text class="week-data">{{weekdata}}</text>
+    <text class="data-time">{{data}}</text>
+    <!-- <text class="weather">多云</text>
+    <text class="temperature">24</text>° -->
+    <!-- <text class="weather">空气质量：优</text> -->
+  </view>
+  <progress percent="30" stroke-width="3" />
+
+  <!-- 输入 -->
+  <view class="insert-box">
+    <input type="text" placeholder="请输入待办&作业" maxlength="20" model:value="{{msg}}" />
+    <button bindtap="addTodo">+</button>
+  </view>
+
+  <!-- todo模块 -->
+  <view id="todo-list">
+    <view class="daiban-list" wx:for="{{todoData}}" wx:key="index">
+      <view class="todo-text">
+        {{item.content}}
+      </view>
+
+      <view class="todo-dalete">
+        <icon type="clear" bindtap="deleteData" data-index="{{index}}" color="#ddd  "></icon>
+      </view>
+    </view>
+  </view>
+</view>
+

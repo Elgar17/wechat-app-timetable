@@ -1,0 +1,77 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">一周</view>
+  <view
+    class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}"
+    data-current="1"
+    bindtap="swichNav"
+  >{{today}}</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight + 50}}px" bindchange="bindChange">
+    <swiper-item>
+        <view>
+  <view id="week-headeer">
+    <text>周一</text>
+    <text>周二</text>
+    <text>周三</text>
+    <text>周四</text>
+    <text>周五</text>
+    <text>周六</text>
+    <text>周日</text>
+  </view>
+
+  <view id="week-continer">
+    <view class=".week-left-box">
+      <view>1</view>
+      <view>2</view>
+      <view>3</view>
+      <view>4</view>
+      <view>5</view>
+      <view>6</view>
+      <view>7</view>
+      <view>8</view>
+      <view>9</view>
+      <view>10</view>
+      <view>11</view>
+      <view>12</view>
+    </view>
+    <!-- 表格 -->
+    <view class="week-content">
+      <view
+        class="row-box"
+        bindlongpress="longPress"
+        wx:for="{{weekdayCourse}}"
+        wx:key="index"
+        data-course="{{index}}"
+      >
+        <view
+          bindlongpress="longPress"
+          data-week="{{index}}"
+          class="col-box purple"
+          wx:for="{{item}}"
+          wx:key="index"
+        >
+          <view class="course">{{item.name}}</view>
+          <view class="address">{{item.classAd}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+    </swiper-item>
+
+    <!-- 当天的课表 -->
+    <swiper-item>
+        <view id="today-box">
+  <view
+    wx:for="{{weekdayCourse}}"
+    wx:key="index"
+    class="today-list"
+    wx:if="{{weekdayCourse[index][numToday - 1].name != '' }}"
+  >
+    <view>{{ weekdayCourse[index][numToday - 1].name}}</view>
+    <view>@{{ weekdayCourse[index][numToday - 1].classAd}}</view>
+  </view>
+</view>
+    </swiper-item>
+</swiper>

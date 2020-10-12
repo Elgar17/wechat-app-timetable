@@ -1,0 +1,49 @@
+{
+  "entryPagePath": "pages/mine/mine",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/edit/edit",
+    "pages/mine/mine",
+    "pages/mine/add1/add1"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请点击确定"
+    }
+  },
+  "window": {
+    "navigationStyle": "default",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "课表",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#ccc"
+  },
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#0094ff",
+    "list": [
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "课表",
+        "iconPath": "icon/homeO.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/edit/edit",
+        "text": "待办",
+        "iconPath": "icon/editO.png",
+        "selectedIconPath": "icon/edit.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "icon/mineO.png",
+        "selectedIconPath": "icon/mine.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
